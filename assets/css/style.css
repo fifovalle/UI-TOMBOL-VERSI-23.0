@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #25d366;
+  padding: 5px;
+  position: relative;
+  width: 8.5em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 0.4em;
+}
+
+button p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.15em;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  color: #25d366;
+}
+
+button svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff;
+}
+
+button:hover p {
+  left: 0.5em;
+  color: #fff;
+}
+
+button:hover svg {
+  opacity: 1;
+}
+
+button:hover {
+  background-color: #25d366;
+}
